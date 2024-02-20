@@ -1,0 +1,74 @@
+/* Estilos para el contenedor del formulario */
+.login-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 12px;
+}
+
+/* Estilos para los campos de entrada */
+input {
+  width: 100%;
+  padding: 2px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+/* Estilos para el botón de inicio de sesión */
+button {
+  background-color: #6e0011;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #b7001d;
+}
+
+/* Estilos para los enlaces inferiores */
+.bottom-links {
+  margin-top: 20px;
+}
+
+.bottom-links a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 10px;
+}
+
+.bottom-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  /* Estilos para pantallas más pequeñas (por ejemplo, dispositivos móviles) */
+  .login-container{
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 769px) {
+  /* Estilos para pantallas más grandes (por ejemplo, tabletas y escritorio) */
+  .login-container{
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,27 @@
+<div class="registration-form-container">
+    <h2>Crear una cuenta personal nueva</h2>
+    <form>
+      <div class="form-group">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" [(ngModel)]="user.email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" [(ngModel)]="user.password" required>
+      </div>
+      <div class="form-group">
+        <label for="confirmPassword">Verificación de contraseña</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" [(ngModel)]="user.confirmPassword" required>
+      </div>
+      <div class="form-group">
+        <label for="birthdate">Fecha de nacimiento</label>
+        <input type="date" id="birthdate" name="birthdate" [(ngModel)]="user.birthdate" required>
+      </div>
+      <button class="continue-button" (click)="register()">Continuar</button>
+      <div class="auth-container">
+        <h2>Iniciar sesión con:</h2>
+        <a class="login-button" href="URL-DE-AUTENTICACIÓN-DE-FACEBOOK">Iniciar sesión con Facebook</a>
+        <a class="login-button-correo" href="URL-DE-AUTENTICACIÓN-DE-GMAIL">Iniciar sesión con Gmail</a>
+      </div>
+    </form>
+  </div>

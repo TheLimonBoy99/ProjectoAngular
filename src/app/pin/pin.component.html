@@ -1,0 +1,10 @@
+<nav>
+    <div class="navbar">
+      <div class="dropdown">
+        <button class="dropbtn">Categoría</button>
+        <div class="dropdown-content">
+          <a *ngFor="let category of categories" (click)="onSelectCategory(category)">{{ category }}</a>
+        </div>
+      </div>
+    </div>
+  </nav>

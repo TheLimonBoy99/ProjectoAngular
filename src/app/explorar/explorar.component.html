@@ -1,0 +1,16 @@
+<app-nav-bar></app-nav-bar>
+<div class="Titulo">
+    <h1>Explorar categorias</h1>
+</div>
+<app-pin></app-pin>
+<div class="feed-categorias">
+    <div class="categoria" *ngFor="let categoria of categorias">
+      <div class="categoria-inner">
+        <img [src]="categoria.imagenUrl" alt="{{ categoria.nombre }}" class="imagen-categoria">
+        <div class="categoria-info">
+          <h3>{{ categoria.nombre }}</h3>
+          <p>{{ categoria.descripcion }}</p>
+        </div>
+      </div>
+    </div>
+  </div>

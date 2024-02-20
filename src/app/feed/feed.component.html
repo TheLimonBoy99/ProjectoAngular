@@ -1,0 +1,11 @@
+<div class="pin" (mouseenter)="ShowZoom= true" (mouseleave)="ShowZoom = false">
+    <img src="./assets/6.png" alt="Imagen del pin" [style.cursor]="ShowZoom ? 'zoom-in' : 'default'">
+    <div class="options">
+      <button class="dropdown-button">Diseño web<i class="fas fa-chevron-down"></i></button>
+      <button class="save-button">Guardar</button>
+      <button class="share-button" (click)="toggleShareOptions = !toggleShareOptions">Compartir</button>
+      <div class="share-options" *ngIf="toggleShareOptions">  
+      </div>
+    </div>
+  </div>
+  
